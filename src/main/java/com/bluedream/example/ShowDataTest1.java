@@ -99,12 +99,15 @@ public class ShowDataTest1 extends HttpServlet {
 		       // int age = rs.getInt("age");
 		       String strCustomerName = rs.getString("customerName");
 		       String strPhone = rs.getString("phone");
+		       String strContactLastName = rs.getString("contactLastName");
 
-		         //Display values
-		         pOut.print("intCustomerNumber: " + intCustomerNumber + " ");		         
-		         pOut.print("strCustomerName: " + strCustomerName + " ");
-		         pOut.println("strPhone: " + strPhone + "</br>");
-		      }
+		       //Display values
+		       pOut.print("intCustomerNumber: " + intCustomerNumber + " ");		         
+		       pOut.print("strCustomerName: " + strCustomerName + " ");
+		       pOut.println("strContactLastName: " + strContactLastName + " ");
+		       pOut.println("strPhone: " + strPhone + "</br>");
+		       
+		   }
 		      //STEP 6: Clean-up environment
 		      rs.close();
 		      stmt.close();
