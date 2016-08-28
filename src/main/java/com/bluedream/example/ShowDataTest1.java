@@ -62,17 +62,17 @@ public class ShowDataTest1 extends HttpServlet {
 	   String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
 	   // static final String DB_URL = "jdbc:mysql://admin:adminTs7AvzM@127.2.45.130:3306/classicmodels";
 	   // For OpenShift
-	      // String DB_URL = "jdbc:mysql://127.2.45.130:3306/classicmodels";
+	      String DB_URL = "jdbc:mysql://127.2.45.130:3306/classicmodels";
 	   // For Localhost
-	      String DB_URL = "jdbc:mysql://localhost:3366/classicmodels";
+	      // String DB_URL = "jdbc:mysql://localhost:3366/classicmodels";
 		   
 	   //  Database credentials
 	   // For OpenShift 
-	      // String USER = "adminTs7AvzM";
-	      // String PASS = "DBDLSpx-a5wW";
+	      String USER = "adminTs7AvzM";
+	      String PASS = "DBDLSpx-a5wW";
 	   // For Localhost
-	      String USER = "CM_AP1";
-	      String PASS = "CmAp1@123";
+	      //String USER = "CM_AP1";
+	      //String PASS = "CmAp1@123";
 
 		   
        Connection conn = null;
