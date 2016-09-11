@@ -13,7 +13,9 @@ MenuApp1.controller("CustListCtrl",
 
     $scope.fetchCustomerList = function() {
        
-    	$http({method: 'GET', url: '/ClassicModels15_AJs1/Customers'}).    	
+    	// For jbossews, Modified by Charlotte 2016/09/11
+    	// $http({method: 'GET', url: '/ClassicModels15_AJs1/Customers'}).
+    	$http({method: 'GET', url: '/Customers'}).
           success(function(data, status, headers, config) {
                  $scope.CustomerList = data;
           }).
