@@ -6,6 +6,15 @@
 
 	<display-name>JS-springmvc</display-name>
 	
+	<filter>
+	  <filter-name>CorsFilter</filter-name>
+	  <filter-class>org.apache.catalina.filters.CorsFilter</filter-class>
+    </filter>
+	<filter-mapping>
+		<filter-name>CorsFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
 	<!-- Spring MVC -->
 	<!-- create a [servlet-name]-servlet.xml file under WEB-INF folder. Note that the file name pattern must match the servlet name defined in web.xml, For this example, the file name is springmvc-servlet.xml. We can define the ViewResolver in this file. -->
 	<servlet>
